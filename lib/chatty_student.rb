@@ -7,7 +7,10 @@ class ChattyStudent
   end
 
   def raise_hand
-    10.times(super)
+    super
+    10.times do |this|
+      raise_hand
+    end
   end
 
 
